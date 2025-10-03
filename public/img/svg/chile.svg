@@ -1,0 +1,28 @@
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Definimos un recorte circular -->
+  <defs>
+    <clipPath id="circleClip">
+      <circle cx="100" cy="100" r="100"/>
+    </clipPath>
+  </defs>
+
+  <!-- Fondo blanco circular -->
+  <circle cx="100" cy="100" r="100" fill="white"/>
+
+  <!-- Bandera recortada dentro del círculo -->
+  <g clip-path="url(#circleClip)">
+    <!-- Parte inferior roja -->
+    <rect x="0" y="100" width="200" height="100" fill="#D52B1E"/>
+
+    <!-- Parte superior blanca -->
+    <rect x="0" y="0" width="200" height="100" fill="white"/>
+
+    <!-- Cuadro azul -->
+    <rect x="0" y="0" width="100" height="100" fill="#0033A0"/>
+
+    <!-- Estrella blanca centrada en el cuadro azul -->
+    <g transform="translate(50,50) scale(0.6)">
+      <polygon fill="white" points="0,-30 8.7,-9.5 29.4,-9.5 13.4,3.6 19.8,24.0 0,12 -19.8,24 -13.4,3.6 -29.4,-9.5 -8.7,-9.5"/>
+    </g>
+  </g>
+</svg>
